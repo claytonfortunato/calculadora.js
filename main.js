@@ -19,6 +19,9 @@ for (let i = 0; i < numbers.length; i++) {
     if (isFirstValue === false) {
       getFirstValue(atr);
     }
+    if (isSecondValue == false) {
+      getSecondValue(atr);
+    }
   });
 }
 
@@ -41,6 +44,7 @@ const getSign = () => {
   for (let i = 0; i < signs.length; i++) {
     signs[i].addEventListener("click", (e) => {
       sign = e.target.getAttribute("value");
+      isFirstValue = true;
     });
   }
 };
@@ -58,6 +62,10 @@ equals.addEventListener("click", () => {
     resultValue = firstValue / secondValue;
   }
   result.innerHTML = resultValue;
+  firstValue = resultValue;
+  secondValue = "";
+
+  checkResultLength();
 });
 
 const checkResultLength = () => {
