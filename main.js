@@ -96,10 +96,10 @@ percent.addEventListener("click", () => {
 clear.addEventListener("click", () => {
   result.innerHTML = 0;
 
-  let firstValue = "";
-  let isFirstValue = false;
-  let secondValue = "";
-  let isSecondValue = false;
-  let sign = "";
-  let resultValue = 0;
+  firstValue = "";
+  isFirstValue = false;
+  secondValue = "";
+  isSecondValue = false;
+  sign = "";
+  resultValue = 0;
 });
